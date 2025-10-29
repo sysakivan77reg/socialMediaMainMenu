@@ -32,6 +32,8 @@ body{
 .nav-panel__container:last-of-type{
     display: flex;
     margin-top: 10rem;
+    justify-content: flex-end;
+    margin-right: 2rem;
 }
 
 /* --chat button css code-- */
@@ -339,7 +341,7 @@ body{
     position: absolute;
     z-index: 0;
     opacity: 0.2;
-    margin-left: 19rem;
+    margin-left: 8rem;
     height: 7rem;
     margin-top: -2rem;
 }
@@ -380,7 +382,7 @@ body{
 /* --authorisation button css code-- */
 
 /* --registration button css code-- */
-.nav-panel__button-registration{
+/* .nav-panel__button-registration{
     background-color: rgb(196, 142, 243);
     padding: 1rem 1rem 1rem 1rem;
     border-radius: 0.2rem;
@@ -447,5 +449,5 @@ body{
 
 .nav-panel__button-registration a:hover{
     background-color: rgb(110, 187, 255);
-}
+} */
 /* --registration button css code-- */
