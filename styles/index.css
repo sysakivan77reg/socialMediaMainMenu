@@ -1,0 +1,451 @@
+html{
+    font-family: Montserrat, cursive;
+    font-size: 1em;
+    background-color: aliceblue;
+}
+
+body{
+    margin: 0;
+}
+
+
+
+.nav-panel{
+    max-width: max-content;
+    border-radius: 0.2rem;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    text-decoration: none;
+    position: relative;
+    transform: rotateX(7deg) rotateY(346deg);
+    left: 45%;
+    margin-top: 0%;
+    background-color: transparent;
+}
+
+.nav-panel__container{
+    display: flex;
+    margin-top: 3rem;
+}
+
+.nav-panel__container:last-of-type{
+    display: flex;
+    margin-top: 10rem;
+}
+
+/* --chat button css code-- */
+.nav-panel__button-chats{
+    background-color: rgb(110, 187, 255);
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 0.2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 10px 12px 0px 0px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease;
+}
+
+.nav-panel__button-chats:hover{
+    transform: translate(-0.5rem, -0.5rem);
+    box-shadow: 20px 22px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+.nav-panel__button-chats img{
+    position: absolute;
+    z-index: 0;
+    opacity: 0.2;
+    margin-left: 29rem;
+    height: 8rem;
+    margin-top: -5rem;
+}
+
+.nav-panel__messagecounter{
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.nav-panel__messagecounter span:first-child{
+    background-color: rgb(196, 142, 243);
+    border-radius: 1rem;
+    font-size: 4.5rem;
+    font-weight: 500;
+    padding: 0rem 1rem 0rem 1rem;
+    text-shadow: 5px 3px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 11px 7px 1px -3px rgba(0, 0, 0, 0.3);
+}
+
+.nav-panel__messagecounter span:last-child{
+    font-size: 1rem;
+    font-weight: 500;
+    text-shadow: 2.5px 1.5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.nav-panel__text{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-panel__text a:first-child{
+    z-index: 1;
+    text-decoration: none;
+    font-size: 5rem;
+    font-weight: 600;
+    color: black;
+    text-shadow: 6px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.nav-panel__text a:last-child{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: black;
+    text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.3);
+}
+/* --chat button css code-- */
+
+
+
+/* --contscts button css code-- */
+.nav-panel__button-contacts{
+    margin-left: 3rem;
+    margin-right: 3rem;
+    background-color: rgb(196, 142, 243);
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    box-shadow: 10px 12px 0px 0px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.nav-panel__button-contacts:hover{
+    transform: translate(-0.5rem, -0.5rem);
+    box-shadow: 20px 22px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+.nav-panel__button-contacts div{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-panel__button-contacts img{
+    position: absolute;
+    z-index: 0;
+    opacity: 0.2;
+    margin-left: 5rem;
+    height: 8rem;
+    margin-top: -2rem;
+}
+
+.nav-panel__button-contacts span:first-of-type{
+    font-size: 2rem;
+    font-weight: 500;
+    text-shadow: 2.5px 1.5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.nav-panel__button-contacts span:last-of-type{
+    font-size: 1rem;
+    text-decoration: underline;
+    font-weight: 500;
+    text-shadow: 1.5px 0.5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.nav-panel__button-contacts a{
+    background-color: aliceblue;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    text-shadow: 1.5px 0.5px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 6px 6px 1px -2px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-in-out ;
+}
+
+.nav-panel__button-contacts a:hover{
+    background-color: rgb(110, 187, 255);
+}
+/* --contscts button css code-- */
+
+
+
+/* --trending button css code-- */
+.nav-panel__button-trending{
+    margin-left: 3rem;
+    margin-right: 3rem;
+    background-color: rgb(196, 142, 243);
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    box-shadow: 10px 12px 0px 0px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.nav-panel__button-trending:hover{
+    transform: translate(-0.5rem, -0.5rem);
+    box-shadow: 20px 22px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+.nav-panel__button-trending div{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-panel__button-trending div img:first-of-type{
+    position: absolute;
+    z-index: 0;
+    opacity: 0.2;
+    margin-left: 13rem;
+    height: 4rem;
+    margin-top: 3rem;
+    transform: rotateZ(339deg);
+}
+
+.nav-panel__button-trending div img{
+    position: absolute;
+    z-index: 0;
+    opacity: 0.2;
+    margin-left: 15rem;
+    height: 5rem;
+    margin-top: 6rem;
+}
+
+.nav-panel__button-trending div img:last-of-type{
+    position: absolute;
+    z-index: 0;
+    opacity: 0.2;
+    margin-left: 16rem;
+    height: 4rem;
+    margin-top: 2rem;
+    transform: rotateZ(26deg);
+}
+
+.nav-panel__button-trending div span:first-of-type{
+    font-size: 3rem;
+    font-weight: 500;
+    text-shadow: 3.5px 2.5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.nav-panel__button-trending div span:last-of-type{
+    font-size: 1rem;
+    font-weight: 500;
+    text-shadow: 1.5px 0.5px 0px rgba(0, 0, 0, 0.3);
+    opacity: 0.5;
+}
+
+.nav-panel__button-trending a{
+    background-color: aliceblue;
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    text-shadow: 1.5px 0.5px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 6px 6px 1px -2px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav-panel__button-trending a:hover{
+    background-color: rgb(110, 187, 255);
+}
+/* --trending button css code-- */
+
+
+
+/* --profile button css code-- */
+.nav-panel__button-profile{
+    background-color: rgb(110, 187, 255);
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 0.2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 10px 12px 0px 0px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease;
+}
+
+.nav-panel__button-profile:hover{
+    transform: translate(-0.5rem, -0.5rem);
+    box-shadow: 20px 22px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+.nav-panel__button-profile div:first-of-type{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.profile__bg-filler{
+    position: absolute;
+    z-index: 0;
+    opacity: 0.2;
+    margin-left: 29rem;
+    height: 10rem;
+    margin-top: -4rem;
+}
+/* --profile button css code-- */
+
+/* --authorisation button css code-- */
+.nav-panel__button-authorisation{
+    background-color: rgb(110, 187, 255);
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 10px 12px 0px 0px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease;
+}
+
+.nav-panel__button-authorisation:hover{
+    transform: translate(-0.5rem, -0.5rem);
+    box-shadow: 20px 22px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+.nav-panel__button-authorisation div:first-of-type{
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+}
+
+.nav-panel__button-authorisation div img{
+    position: absolute;
+    z-index: 0;
+    opacity: 0.2;
+    margin-left: 19rem;
+    height: 7rem;
+    margin-top: -2rem;
+}
+
+.nav-panel__button-authorisation div span:first-of-type{
+    font-size: 3rem;
+    font-weight: 500;
+    text-shadow: 3.5px 2.5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.nav-panel__button-authorisation div span:last-of-type{
+    font-size: 1rem;
+    font-weight: 500;
+    text-shadow: 2.5px 1.5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.nav-panel__button-authorisation a{
+    width: 100%;
+    margin-top: 1rem;
+    background-color: aliceblue;
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    text-shadow: 1.5px 0.5px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 6px 6px 1px -2px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav-panel__button-authorisation a:hover{
+    background-color: rgb(196, 142, 243);
+}
+/* --authorisation button css code-- */
+
+/* --registration button css code-- */
+.nav-panel__button-registration{
+    background-color: rgb(196, 142, 243);
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 10px 12px 0px 0px rgba(0, 0, 0, 0.5);
+    margin-left: 3rem;
+    transition: all 0.2s ease;
+}
+
+.nav-panel__button-registration:hover{
+    transform: translate(-0.5rem, -0.5rem);
+    box-shadow: 20px 22px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+.nav-panel__button-registration div:first-of-type{
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+}
+
+.nav-panel__button-registration div img{
+    position: absolute;
+    z-index: 0;
+    opacity: 0.2;
+    margin-left: 19rem;
+    height: 7rem;
+    margin-top: -2rem;
+}
+
+.nav-panel__button-registration div span:first-of-type{
+    font-size: 3rem;
+    font-weight: 500;
+    text-shadow: 3.5px 2.5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.nav-panel__button-registration div span:last-of-type{
+    font-size: 1rem;
+    font-weight: 500;
+    text-shadow: 2.5px 1.5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.nav-panel__button-registration a{
+    width: 100%;
+    margin-top: 1rem;
+    background-color: aliceblue;
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    text-shadow: 1.5px 0.5px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 6px 6px 1px -2px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav-panel__button-registration a:hover{
+    background-color: rgb(110, 187, 255);
+}
+/* --registration button css code-- */
